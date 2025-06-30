@@ -33,7 +33,7 @@ while True:
 
         distance = float(str(arduinoData.readline(), 'utf-8').strip('\r\n')) * 100
 
-        threshold = 95 - 1.5 * distance
+        threshold = 95 - 1.5 * distance    # Depends on your setup. It's just a linear equation for distance vs threshold to make things interactive
         
         # print(avgdist, distance)
         if (distance <= 60 and distance >= 10): 
